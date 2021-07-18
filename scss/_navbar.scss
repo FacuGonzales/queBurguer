@@ -1,0 +1,186 @@
+@import "variables/_colors.scss";
+@import "mixins/_mixins.scss";
+
+header {
+  width: 100%;
+  top: 0;
+  position: sticky;
+  z-index: 1000;
+}
+
+.bg-dark {
+  background-color: $colorNegro !important;
+}
+
+.navbar {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+nav div.container-fluid div.navbar-collapse {
+  justify-content: center;
+}
+
+.ulNav {
+  a {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    color: $colorBlanco;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+
+    span {
+      transition: transform 0.2s ease-out;
+
+      svg {
+        color: $colorBlanco;
+      }
+
+      &:first-child {
+        display: inline-block;
+        padding: 10px;
+      }
+
+      &:last-child {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        @include display-flex-content(flex, center, center, "");
+        transform: translateY(-100%);
+      }
+    }
+
+    &:hover span {
+      &:first-child {
+        transform: translateY(100%);
+      }
+
+      &:last-child {
+        transform: none;
+      }
+    }
+  }
+
+  &[data-animation] a:hover span:last-child {
+    transform: none;
+  }
+}
+
+ul.ulNav .liNav {
+  ol.subMenu {
+    min-width: 500px;
+    background: $colorNegro;
+    padding: 0px 50px;
+    width: 32%;
+    border-radius: 0px 30px 30px 30px;
+
+    li.subMenuItem {
+      color: $colorBlanco;
+      font-size: 1.5rem;
+      border-left: none;
+      line-height: 50px;
+
+      a {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  &:hover > ol.subMenu {
+    display: block;
+    transition: step-end 0.5s;
+  }
+
+  ol.subMenu li.subMenuItem:hover {
+    color: $colorBurguer;
+    transition: transform 0.2s ease-out;
+  }
+}
+
+li.subMenuItem a:hover {
+  color: $colorBurguer;
+  transition: transform 0.2s ease-out;
+}
+
+/*                ANIMACIONES PARA NAV                */
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.ulNav {
+  &[data-animation="to-top"] a {
+    span:last-child {
+      transform: translateY(100%);
+    }
+
+    &:hover span:first-child {
+      transform: translateY(-100%);
+    }
+  }
+
+  &[data-animation="to-right"] a {
+    span:last-child {
+      transform: translateX(-100%);
+    }
+
+    &:hover span:first-child {
+      transform: translateX(100%);
+    }
+  }
+
+  &[data-animation="to-left"] a {
+    span:last-child {
+      transform: translateX(100%);
+    }
+
+    &:hover span:first-child {
+      transform: translateX(-100%);
+    }
+  }
+}
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/*                                                                                         MEDIAS QUERYS                                                                                                    */
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media only screen and (max-width: 1024px) {
+  header {
+    position: fixed;
+    z-index: 100;
+  }
+
+  .navbar {
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  ul.ulNav .liNav ol.subMenu {
+    padding: 0px !important;
+    border-radius: none !important;
+
+    li.subMenuItem a {
+      font-size: 1rem;
+    }
+  }
+
+  .ulNav a span:last-child {
+    justify-content: left;
+    left: 30px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .ulNav a {
+    font-size: 0.8rem;
+  }
+
+  .liNav a span svg {
+    width: 20px;
+    height: 20px;
+  }
+}

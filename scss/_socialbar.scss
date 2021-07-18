@@ -1,0 +1,80 @@
+@import "variables/_colors.scss";
+@import "mixins/_mixins.scss";
+
+.socialBar {
+  position: fixed;
+  right: 0;
+  top: 35%;
+  font-size: 1.5rem;
+  @include display-flex-content(flex, flex-end, center, column);
+  z-index: 10000;
+
+  &__icon {
+    color: $colorBlanco;
+    padding: 0.7rem;
+    @include display-flex-content(flex, "", "", "");
+    // display: flex;
+    transition: all 0.5s;
+
+    &:first-child {
+      border-radius: 1rem 0 0 0;
+    }
+
+    &:last-child {
+      border-radius: 0 0 0 1rem;
+    }
+
+    &:hover {
+      padding-right: 3rem;
+      border-radius: 1rem 0 0 1rem;
+      box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.42);
+      background: $colorNegro;
+    }
+  }
+
+  &__iconFace {
+    background: $colorFacebook;
+    cursor: pointer;
+
+    &:hover {
+      color: $colorFacebook;
+    }
+  }
+
+  &__iconInsta {
+    background: $colorInstagram;
+    cursor: pointer;
+
+    &:hover {
+      color: $colorInstagram;
+    }
+  }
+
+  &__iconWhatsapp {
+    background: $colorWhatsapp;
+    cursor: pointer;
+
+    &:hover {
+      color: $colorWhatsapp;
+    }
+  }
+}
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/*                                                                                         MEDIAS QUERYS                                                                                                    */
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media only screen and (max-width: 480px) {
+  .socialBar {
+    &__icon {
+      padding: 0.5rem;
+
+      &--svg {
+        width: 15px;
+        height: 15x;
+      }
+    }
+  }
+}

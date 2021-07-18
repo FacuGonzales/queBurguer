@@ -1,0 +1,619 @@
+@import "_generales.scss";
+@import "_navbar.scss";
+@import "_socialbar.scss";
+@import "_404.scss";
+@import "variables/_colors.scss";
+@import "mixins/_mixins.scss";
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/*                                                                                        INDEX PAGE                                                                                                        */
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/*--------------------- home ---------------------- */
+
+.headerHome {
+  width: 100%;
+  height: 93vh;
+  @include background-image-content(
+    "https://i.ibb.co/2jY64KQ/fondo-Madera.jpg"
+  );
+
+  &__img {
+    width: 90%;
+    margin: 0px auto;
+    padding: 50px 0px;
+    display: block;
+  }
+}
+
+/*--------------------- OPINIONES ---------------------- */
+
+.carousel {
+  width: 95%;
+  margin: 0px auto;
+  overflow: hidden;
+
+  &__opinionesList {
+    display: flex !important;
+    justify-content: center;
+
+    &__opinionItem {
+      width: 300px;
+      height: 250px;
+      border-radius: 10px;
+      align-items: center;
+      justify-content: center;
+      transition: 0.3s;
+      margin: 0px 20px 70px 20px;
+      border: 1px solid $colorBurguer;
+      background-color: $colorGris;
+
+      &--name {
+        color: $colorNegroDegradado;
+        font-size: 3rem;
+        text-align: center;
+        margin: 10px 0px;
+      }
+
+      &--puntajeOpinion {
+        display: flex;
+        justify-content: center;
+        color: $colorEstrella;
+        margin: 20px auto;
+        font-size: 2rem;
+
+        &__icono {
+          padding: 0px 5px;
+          width: 25px;
+          height: 25px;
+        }
+      }
+
+      &--comentario {
+        color: $colorNegro;
+        font-size: 1rem;
+        margin: 0px 15px;
+      }
+    }
+  }
+}
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/*                                                                                        ABOUT PAGE                                                                                                        */
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.section {
+  &__sectionNosotros {
+    width: 80%;
+    margin: 0px auto;
+    padding: 35px 0px;
+
+    &--title {
+      color: $colorBurguer;
+      text-align: center;
+      text-transform: uppercase;
+      display: grid;
+
+      &__titleUno {
+        @include fonts-content(AlwaysForever, 12rem, none, none);
+      }
+
+      &__titleDos {
+        @include fonts-content(BAUHS93, 9rem, none, none);
+      }
+    }
+
+    &--parrafo {
+      color: $colorBlanco;
+      font-size: 1.5rem;
+      text-align: justify;
+      line-height: 40px;
+    }
+  }
+}
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/*                                                                                        CARTA PAGE                                                                                                        */
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.sectionCartaHamburguesas {
+  @include background-image-content(
+    "https://i.ibb.co/FnL6JXg/hamburguesa-Fondo.png"
+  );
+}
+
+.sectionCartaLomos {
+  @include background-image-content(
+    "https://i.ibb.co/k83LvdS/lomitos-Fondo.png"
+  );
+}
+
+.sectionCartaEmpanadas {
+  @include background-image-content(
+    "https://i.ibb.co/VtLpMkj/empanadas-Fondo.png"
+  );
+}
+
+.sectionCartaPizzas {
+  @include background-image-content(
+    "https://i.ibb.co/GMQftpz/pizza-Fondos.png"
+  );
+}
+
+.carta {
+  @include display-flex-content(flex, center, center, "");
+  color: $colorBlanco;
+}
+
+.content {
+  max-width: 49rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: auto;
+  text-align: center;
+  padding: 150px 0px 152px 0px;
+}
+
+.contentHeader {
+  z-index: 2;
+  margin: 0px auto;
+  width: 100%;
+}
+
+.titleCarta {
+  text-align: center;
+  @include fonts-content(BAUHS93, 3rem, none, none);
+  color: $colorBlanco;
+  padding: 15px 0px;
+  border-bottom: 1px solid;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 200px 200px;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.item {
+  @include display-flex-content(flex, center, center, "");
+  width: 100%;
+  height: 155px;
+  border-radius: 10px;
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  margin: 20px auto;
+
+  &::before {
+    content: "";
+    background: $colorNegroDegradado;
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    top: 30px;
+    bottom: 30px;
+    transition: all ease-in-out 0.3s;
+    z-index: 2;
+    opacity: 0;
+  }
+}
+
+/* animacion cuando hace el hover */
+
+.grid .item img {
+  width: 100%;
+  height: 100%;
+}
+
+.item img:hover > .itemCartaTilte {
+  display: block !important;
+}
+
+.itemCartaTilte {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  opacity: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 3;
+  transition: all ease-in-out 0.3s;
+  @include display-flex-content(flex, center, space-around, column);
+  height: 100%;
+  padding: 40px 0;
+}
+
+.item {
+  .itemCartaTilte {
+    &::before,
+    &::after {
+      display: block;
+      content: "";
+      width: 48px;
+      height: 48px;
+      position: absolute;
+      transition: all 0.5s ease 0s;
+      z-index: 9994;
+    }
+  }
+
+  &:hover {
+    &::before {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 1;
+    }
+
+    .itemCartaTilte {
+      opacity: 1;
+
+      &::before {
+        top: 15px;
+        left: 15px;
+      }
+
+      &::after {
+        bottom: 15px;
+        right: 15px;
+      }
+    }
+  }
+}
+
+.itemCartaTilte h4 {
+  color: $colorBlanco;
+  letter-spacing: 2px;
+  font-size: 3rem;
+  width: 100%;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/*                                                                                        LOCALES PAGE                                                                                                      */
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.section {
+  &__zonasList {
+    width: 80%;
+    margin: 0px auto;
+    padding: 15px 0px;
+
+    &__zonasItems {
+      &--nameZona {
+        color: $colorBlanco;
+        font-size: 5rem;
+      }
+
+      &--localesList {
+        @include display-flex-content(flex, center, center, "");
+        margin: 0px auto;
+        padding: 15px 0px;
+
+        &__localesItem {
+          width: 300px;
+          height: 332px;
+          border-radius: 10px;
+          @include display-flex-content("", center, center, "");
+          transition: 0.3s;
+          padding: 0px 15px;
+          margin: 0px 20px 70px 20px;
+
+          &__direccionItem {
+            font-size: 1.2rem;
+            padding: 10px 0px;
+
+            &--datos {
+              padding: 5px 0px;
+              color: $colorBlanco;
+              font-family: Arial, Helvetica, sans-serif;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/*                                                                                       CONTACTO PAGE                                                                                                      */
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.contactoSection {
+  height: 100vh;
+
+  &__formulario {
+    width: 60%;
+    margin: 60px auto;
+    color: $colorBlanco;
+    font-family: BAUHS93;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 16px;
+    border-radius: 10px;
+    background-color: $colorBurguerDegradado;
+
+    &--label {
+      width: 72px;
+      letter-spacing: 1px;
+      display: inline-block;
+    }
+
+    &--input {
+      &[type="text"],
+      &[type="email"] {
+        width: 50%;
+        height: 40px;
+        padding: 3px 10px;
+        border: 1px solid $colorBlancoInput;
+        border-radius: 3px;
+        background-color: $colorBlancoInput;
+        margin: 8px 0;
+        display: inline-block;
+      }
+      &[type="checkbox"] {
+        width: 20px;
+        height: 20px;
+      }
+
+      &[type="submit"],
+      &[type="reset"] {
+        width: 45%;
+        padding: 8px 16px;
+        margin-top: 32px;
+        border-radius: 5px;
+        display: block;
+        color: $colorBlanco;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    &--select {
+      width: 50%;
+      height: 40px;
+      padding: 3px 10px;
+      border: 1px solid $colorBlancoInput;
+      border-radius: 3px;
+      background-color: $colorBlancoInput;
+      margin: 8px 0;
+      display: inline-block;
+    }
+
+    &--textarea {
+      width: 90%;
+      height: 80px;
+      padding: 3px 10px;
+      border: 1px solid $colorBlancoInput;
+      border-radius: 3px;
+      background-color: $colorBlancoInput;
+      margin: 8px 0;
+      display: inline-block;
+    }
+
+    &--buttons {
+      @include display-flex-content(flex, center, space-around, "");
+      &__limpiar {
+        background-color: $colorButtonCancel;
+        border: 1px solid $colorButtonCancel;
+      }
+
+      &__enviar {
+        background-color: $colorButtonOk;
+        border: 1px solid $colorButtonOk;
+      }
+    }
+  }
+}
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/*                                                                                         MEDIAS QUERYS                                                                                                    */
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media only screen and (max-width: 1024px) {
+  /***** INDEX PAGE *****/
+
+  .headerHome {
+    height: 93vh;
+
+    &__img {
+      padding: 200px 0px;
+    }
+  }
+
+  /****** CARTA PAGE ******/
+
+  .content {
+    padding: 85px 0px 90px 0px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /****** ABOUT PAGE ******/
+
+  .section {
+    &__sectionNosotros {
+      &--title {
+        &__titleUno {
+          font-size: 8rem;
+        }
+
+        &__titleDos {
+          font-size: 5rem;
+        }
+      }
+
+      &--parrafo {
+        line-height: 35px;
+      }
+    }
+  }
+
+  /****** CARTA PAGE ******/
+
+  .content {
+    padding: 40px 0px 0px 0px;
+  }
+
+  .titleCarta {
+    font-size: 2rem;
+    padding: 35px 0px;
+  }
+
+  .grid {
+    grid-template-columns: 40% 40%;
+  }
+
+  /****** LOCALES PAGE ******/
+
+  .section {
+    &__zonasList {
+      &__zonasItems {
+        &--nameZona {
+          font-size: 4.5rem;
+        }
+
+        &--localesList {
+          &__localesItem {
+            padding: 0px 0px !important;
+            margin: 0px 5px 70px 5px;
+
+            &__direccionItem {
+              font-size: 0.8rem;
+              padding: 0px 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /****** CONTACTO PAGE ******/
+
+  .contactoSection {
+    &__formulario {
+      margin: 40px auto !important;
+
+      &--input {
+        &[type="text"],
+        &[type="email"] {
+          width: 90% !important;
+        }
+      }
+
+      &--select {
+        width: 90% !important;
+      }
+
+      &--textarea {
+        width: 90% !important;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /***** INDEX PAGE *****/
+
+  .headerHome {
+    &__img {
+      width: 100%;
+    }
+  }
+
+  .carousel {
+    &__opinionesList {
+      &__opinionItem {
+        width: 200px;
+        height: 180px;
+        margin: 0px 5px 70px 5px;
+
+        &--name {
+          font-size: 1.8rem;
+        }
+
+        &--puntajeOpinion {
+          margin: 10px auto;
+          font-size: 1rem;
+        }
+
+        &--comentario {
+          font-size: 0.6rem;
+          margin: 0px 5px;
+        }
+      }
+    }
+  }
+
+  /****** ABOUT PAGE ******/
+
+  .section {
+    &__sectionNosotros {
+      &--title {
+        &__titleUno {
+          font-size: 5rem;
+        }
+
+        &__titleDos {
+          font-size: 3rem;
+        }
+      }
+
+      &--parrafo {
+        font-size: 1.2rem;
+        line-height: 25px;
+      }
+    }
+  }
+
+  /****** CARTA PAGE ******/
+
+  .grid {
+    grid-template-columns: 80%;
+  }
+
+  /****** LOCALES PAGE ******/
+
+  .section {
+    &__zonasList {
+      &__zonasItems {
+        &--nameZona {
+          font-size: 3em;
+        }
+
+        &--localesList {
+          &__localesItem {
+            padding: 0px 0px !important;
+            margin: 0px 5px 70px 5px;
+
+            &__direccionItem {
+              font-size: 0.5rem;
+              padding: 0px 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

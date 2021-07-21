@@ -41,6 +41,14 @@ a {
     border-bottom: 1px solid #fff;
     width: 90%; }
 
+.h1FondoBlanco {
+  color: #000;
+  border-bottom: 1px solid #000; }
+
+.h1FondoNegro {
+  color: #fff;
+  border-bottom: 1px solid #fff; }
+
 /* –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*                      FOOTER                        */
 /* –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -342,9 +350,31 @@ li.subMenuItem a:hover {
     width: 90%;
     margin: 0px auto;
     padding: 50px 0px;
-    display: block; }
+    display: block;
+    -webkit-animation: slide-top 0.5s ease-in-out alternate forwards;
+    animation: slide-top 0.5s ease-in-out alternate forwards; }
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  85% {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px); } }
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  85% {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px); } }
 
 /*--------------------- OPINIONES ---------------------- */
+.sliderRigth {
+  -webkit-animation: slide-right 0.5s ease-in-out both;
+  animation: slide-right 0.5s ease-in-out both; }
+
 .carousel {
   width: 95%;
   margin: 0px auto;
@@ -382,33 +412,72 @@ li.subMenuItem a:hover {
         font-size: 1rem;
         margin: 0px 15px; }
 
+@-webkit-keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); }
+  85% {
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px); } }
+
+@keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); }
+  85% {
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px); } }
+
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*                                                                                        ABOUT PAGE                                                                                                        */
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-.section__sectionNosotros {
-  width: 80%;
-  margin: 0px auto;
-  padding: 35px 0px; }
-  .section__sectionNosotros--title {
-    color: #fa9b03;
-    text-align: center;
-    text-transform: uppercase;
-    display: grid; }
-    .section__sectionNosotros--title__titleUno {
-      font-family: AlwaysForever;
-      font-size: 12rem;
-      font-weight: none;
-      font-style: none; }
-    .section__sectionNosotros--title__titleDos {
-      font-family: BAUHS93;
-      font-size: 9rem;
-      font-weight: none;
-      font-style: none; }
-  .section__sectionNosotros--parrafo {
-    color: #fff;
-    font-size: 1.5rem;
-    text-align: justify;
-    line-height: 40px; }
+.about {
+  background-image: url("../assets/img/fongoAbout.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .about--sliderLeft {
+    -webkit-animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+  .about__sectionNosotros {
+    width: 80%;
+    margin: 0px auto;
+    padding: 35px 0px; }
+    .about__sectionNosotros--title {
+      color: #fa9b03;
+      text-align: center;
+      text-transform: uppercase;
+      display: grid; }
+      .about__sectionNosotros--title__titleUno {
+        font-family: AlwaysForever;
+        font-size: 12rem;
+        font-weight: none;
+        font-style: none; }
+      .about__sectionNosotros--title__titleDos {
+        font-family: BAUHS93;
+        font-size: 9rem;
+        font-weight: none;
+        font-style: none; }
+    .about__sectionNosotros--parrafo {
+      color: #000;
+      font-size: 1.5rem;
+      text-align: justify;
+      line-height: 40px; }
+
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); }
+  85% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px); } }
+
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); }
+  85% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px); } }
 
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*                                                                                        CARTA PAGE                                                                                                        */

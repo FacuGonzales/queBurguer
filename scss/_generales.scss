@@ -32,6 +32,16 @@ a {
   }
 }
 
+.h1FondoBlanco {
+  color: $colorNegro;
+  border-bottom: 1px solid $colorNegro;
+}
+
+.h1FondoNegro {
+  color: $colorBlanco;
+  border-bottom: 1px solid $colorBlanco;
+}
+
 /* –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*                      FOOTER                        */
 /* –––––––––––––––––––––––––––––––––––––––––––––––––– */

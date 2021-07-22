@@ -33,6 +33,7 @@ a {
   background-image: url("https://i.ibb.co/j8BTF9Q/fondoBar.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   height: 100%; }
   .section--subtitle {
     color: #fff;
@@ -290,6 +291,7 @@ li.subMenuItem a:hover {
   background-image: url("https://i.ibb.co/2jY64KQ/fondo-Madera.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -345,7 +347,8 @@ li.subMenuItem a:hover {
   height: 93vh;
   background-image: url("https://i.ibb.co/2jY64KQ/fondo-Madera.jpg");
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
   .headerHome__img {
     width: 90%;
     margin: 0px auto;
@@ -432,9 +435,10 @@ li.subMenuItem a:hover {
 /*                                                                                        ABOUT PAGE                                                                                                        */
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .about {
-  background-image: url("../assets/img/fongoAbout.png");
+  background-image: url("../assets/img/fondos/fondoAbout.svg");
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
   .about--sliderLeft {
     -webkit-animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
@@ -458,7 +462,7 @@ li.subMenuItem a:hover {
         font-weight: none;
         font-style: none; }
     .about__sectionNosotros--parrafo {
-      color: #000;
+      color: #fff;
       font-size: 1.5rem;
       text-align: justify;
       line-height: 40px; }
@@ -479,28 +483,61 @@ li.subMenuItem a:hover {
     -webkit-transform: translateX(-100px);
     transform: translateX(-100px); } }
 
+/*---------------------   SECTION TOPPINGS ---------------------- */
+.toopings {
+  background-image: url("../assets/img/fondos/fondoToppings.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 50px 0px; }
+  .toopings__title {
+    text-align: center;
+    color: #fa9b03;
+    font-weight: 900;
+    font-size: 6rem; }
+  .toopings__parrafo {
+    text-align: center;
+    font-size: 1.5rem; }
+  .toopings__list {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: 250px 250px;
+    justify-content: center;
+    padding-top: 20px;
+    cursor: pointer; }
+    .toopings__list--item__img {
+      width: 60%;
+      display: flex;
+      margin: 0px auto; }
+    .toopings__list--item__nombreTopping {
+      text-align: center; }
+
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*                                                                                        CARTA PAGE                                                                                                        */
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .sectionCartaHamburguesas {
   background-image: url("https://i.ibb.co/FnL6JXg/hamburguesa-Fondo.png");
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
 
 .sectionCartaLomos {
   background-image: url("https://i.ibb.co/k83LvdS/lomitos-Fondo.png");
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
 
 .sectionCartaEmpanadas {
   background-image: url("https://i.ibb.co/VtLpMkj/empanadas-Fondo.png");
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
 
 .sectionCartaPizzas {
   background-image: url("https://i.ibb.co/GMQftpz/pizza-Fondos.png");
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
 
 .carta {
   display: flex;

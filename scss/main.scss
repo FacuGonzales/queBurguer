@@ -135,7 +135,7 @@
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .about {
-  @include background-image-content("../assets/img/fongoAbout.png");
+  @include background-image-content("../assets/img/fondos/fondoAbout.svg");
 
   &--sliderLeft {
     -webkit-animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -164,7 +164,7 @@
     }
 
     &--parrafo {
-      color: $colorNegro;
+      color: $colorBlanco;
       font-size: 1.5rem;
       text-align: justify;
       line-height: 40px;
@@ -190,6 +190,45 @@
   85% {
     -webkit-transform: translateX(-100px);
     transform: translateX(-100px);
+  }
+}
+
+/*---------------------   SECTION TOPPINGS ---------------------- */
+.toopings {
+  @include background-image-content("../assets/img/fondos/fondoToppings.png");
+  padding: 50px 0px;
+
+  &__title {
+    text-align: center;
+    color: $colorBurguer;
+    font-weight: 900;
+    font-size: 6rem;
+  }
+
+  &__parrafo {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: 250px 250px;
+    justify-content: center;
+    padding-top: 20px;
+    cursor: pointer;
+
+    &--item {
+      &__img {
+        width: 60%;
+        display: flex;
+        margin: 0px auto;
+      }
+
+      &__nombreTopping {
+        text-align: center;
+      }
+    }
   }
 }
 

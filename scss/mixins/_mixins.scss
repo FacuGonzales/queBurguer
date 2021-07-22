@@ -2,6 +2,7 @@
   background-image: url($_url);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 @mixin display-flex-content($_display, $_align, $_justify, $_flexDirection) {

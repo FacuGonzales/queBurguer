@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
 
     <title>QueBurguer!</title>
@@ -22,7 +23,7 @@
 
 <body>
     <div id="home" class="headerHome">
-        <img class="headerHome__img" src="https://i.ibb.co/BnY9QzP/logo-Header.png" alt="logo">
+        <img class="headerHome__img" data-aos="fade-up" src="https://i.ibb.co/BnY9QzP/logo-Header.png" alt="logo">
     </div>
 
     <div class="socialBar">
@@ -153,8 +154,7 @@
     </header>
 
     <section class="section about" id="nosotros">
-        <div class="about--sliderLeft">
-
+        <div data-aos="fade-right">
             <div class="about__filter"></div>
             <h2 class="section--subtitle h1fondoNegro">¡Sobre Nosotros!</h2>
 
@@ -178,68 +178,69 @@
     </section>
        
     <section class="toopings col-sm-12 col-md-12 col-lg-12">
-        <h3 class="toopings__title">TOPPINGS</h3>
+        <div data-aos="fade-down">
+            <h3 class="toopings__title">TOPPINGS</h3>
 
-        <p class="toopings__parrafo">¡Los toppings son diferentes combinaciones que le puedes agregar a tu hamburguesa favorita!</p>
+            <p class="toopings__parrafo">¡Los toppings son diferentes combinaciones que le puedes agregar a tu hamburguesa favorita!</p>
 
-        <div class="toopings__list">
-            <div class="toopings__list--item">
-                <img class="toopings__list--item__img" src="assets/img/toppings/caramelizada.png" alt="cebolla caramelizada">
+            <div class="toopings__list">
+                <div class="toopings__list--item">
+                    <img class="toopings__list--item__img" src="assets/img/toppings/caramelizada.png" alt="cebolla caramelizada">
 
-                <p class="toopings__list--item__nombreTopping">Cebolla Caramelizada</p>
+                    <p class="toopings__list--item__nombreTopping">Cebolla Caramelizada</p>
+                </div>
+
+                <div class="toopings__list--item">
+                    <img class="toopings__list--item__img" src="assets/img/toppings/champi.png" alt="Champignon">
+
+                    <p class="toopings__list--item__nombreTopping">Champignon</p>
+
+                </div>
+
+                <div class="toopings__list--item">
+                    <img class="toopings__list--item__img" src="assets/img/toppings/bacon.png" alt="Bacon">
+
+                    <p class="toopings__list--item__nombreTopping">Bacon</p>
+                </div>
+
+                <div class="toopings__list--item">
+                    <img class="toopings__list--item__img" src="assets/img/toppings/chile.png" alt="Aji">
+
+                    <p class="toopings__list--item__nombreTopping">Aji picante</p>
+                </div>
+
+                <div class="toopings__list--item">
+                    <img class="toopings__list--item__img" src="assets/img/toppings/lechuga.png" alt="Lechuga">
+
+
+                    <p class="toopings__list--item__nombreTopping">Lechuga</p>
+                </div>
+
+                <div class="toopings__list--item">
+                    <img class="toopings__list--item__img" src="assets/img/toppings/tomate.png" alt="Tomate">
+
+                    <p class="toopings__list--item__nombreTopping">Tomate</p>
+                </div>
+
+                <div class="toopings__list--item">
+                    <img class="toopings__list--item__img" src="assets/img/toppings/cebolla.png" alt="Cebolla">
+
+                    <p class="toopings__list--item__nombreTopping">Cebolla</p>
+                </div>
+
+                <div class="toopings__list--item">
+                    <img class="toopings__list--item__img" src="assets/img/toppings/salsa.png" alt="Salsa">
+
+                    <p class="toopings__list--item__nombreTopping">Salsas</p>
+                </div>
             </div>
 
-            <div class="toopings__list--item">
-                <img class="toopings__list--item__img" src="assets/img/toppings/champi.png" alt="Champignon">
-                
-                <p class="toopings__list--item__nombreTopping">Champignon</p>
-                
-            </div>
-
-            <div class="toopings__list--item">
-                <img class="toopings__list--item__img" src="assets/img/toppings/bacon.png" alt="Bacon">
-
-                <p class="toopings__list--item__nombreTopping">Bacon</p>
-            </div>
-
-            <div class="toopings__list--item">
-                <img class="toopings__list--item__img" src="assets/img/toppings/chile.png" alt="Aji">
-
-                <p class="toopings__list--item__nombreTopping">Aji picante</p>
-            </div>
-
-            <div class="toopings__list--item">
-                <img class="toopings__list--item__img" src="assets/img/toppings/lechuga.png" alt="Lechuga">
-
-                
-                <p class="toopings__list--item__nombreTopping">Lechuga</p>
-            </div>
-
-            <div class="toopings__list--item">
-                <img class="toopings__list--item__img" src="assets/img/toppings/tomate.png" alt="Tomate">
-
-                <p class="toopings__list--item__nombreTopping">Tomate</p>
-            </div>
-
-            <div class="toopings__list--item">
-                <img class="toopings__list--item__img" src="assets/img/toppings/cebolla.png" alt="Cebolla">
-
-                <p class="toopings__list--item__nombreTopping">Cebolla</p>
-            </div>
-
-            <div class="toopings__list--item">
-                <img class="toopings__list--item__img" src="assets/img/toppings/salsa.png" alt="Salsa">
-
-                <p class="toopings__list--item__nombreTopping">Salsas</p>
-            </div>
         </div>
-
-        
     </section>
 
     <section class="section  col-sm-12 col-md-12 col-lg-12">
 
-        <div class="sliderRigth">
+        <div data-aos="fade-right">
 
             <h2 class="section--subtitle">Opiniones!</h2>
 
@@ -657,6 +658,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

@@ -25,38 +25,82 @@
     margin: 0px auto;
     padding: 50px 0px;
     display: block;
-    -webkit-animation: slide-top 0.5s ease-in-out alternate forwards;
-    animation: slide-top 0.5s ease-in-out alternate forwards;
   }
 }
 
-@-webkit-keyframes slide-top {
-  0% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-  85% {
-    -webkit-transform: translateY(-100px);
-    transform: translateY(-100px);
+/*---------------------   SECTION ABOUT ---------------------- */
+.about {
+  @include background-image-content("../assets/img/fondos/fondoAbout.svg");
+
+  &__sectionNosotros {
+    width: 80%;
+    margin: 0px auto;
+    padding: 35px 0px;
+
+    &--title {
+      color: $colorBurguer;
+      text-align: center;
+      text-transform: uppercase;
+      display: grid;
+
+      &__titleUno {
+        @include fonts-content(AlwaysForever, 12rem, none, none);
+      }
+
+      &__titleDos {
+        @include fonts-content(BAUHS93, 9rem, none, none);
+      }
+    }
+
+    &--parrafo {
+      color: $colorBlanco;
+      font-size: 1.5rem;
+      text-align: justify;
+      line-height: 40px;
+    }
   }
 }
 
-@keyframes slide-top {
-  0% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+/*---------------------   SECTION TOPPINGS ---------------------- */
+.toopings {
+  @include background-image-content("../assets/img/fondos/fondoToppings.png");
+  padding: 50px 0px;
+
+  &__title {
+    text-align: center;
+    color: $colorBurguer;
+    font-weight: 900;
+    font-size: 6rem;
   }
-  85% {
-    -webkit-transform: translateY(-100px);
-    transform: translateY(-100px);
+
+  &__parrafo {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: 250px 250px;
+    justify-content: center;
+    padding-top: 20px;
+    cursor: pointer;
+
+    &--item {
+      &__img {
+        width: 60%;
+        display: flex;
+        margin: 0px auto;
+      }
+
+      &__nombreTopping {
+        text-align: center;
+      }
+    }
   }
 }
 
-/*--------------------- OPINIONES ---------------------- */
-.sliderRigth {
-  -webkit-animation: slide-right 0.5s ease-in-out both;
-  animation: slide-right 0.5s ease-in-out both;
-}
+/*--------------------- SECTION OPINIONES ---------------------- */
 .carousel {
   width: 95%;
   margin: 0px auto;
@@ -102,131 +146,6 @@
         color: $colorNegro;
         font-size: 1rem;
         margin: 0px 15px;
-      }
-    }
-  }
-}
-
-@-webkit-keyframes slide-right {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-  85% {
-    -webkit-transform: translateX(100px);
-    transform: translateX(100px);
-  }
-}
-@keyframes slide-right {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-  85% {
-    -webkit-transform: translateX(100px);
-    transform: translateX(100px);
-  }
-}
-
-/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-/*                                                                                        ABOUT PAGE                                                                                                        */
-
-/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-.about {
-  @include background-image-content("../assets/img/fondos/fondoAbout.svg");
-
-  &--sliderLeft {
-    -webkit-animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-    animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  }
-
-  // background-image: url(../assets/img/fongoAbout.png);
-  &__sectionNosotros {
-    width: 80%;
-    margin: 0px auto;
-    padding: 35px 0px;
-
-    &--title {
-      color: $colorBurguer;
-      text-align: center;
-      text-transform: uppercase;
-      display: grid;
-
-      &__titleUno {
-        @include fonts-content(AlwaysForever, 12rem, none, none);
-      }
-
-      &__titleDos {
-        @include fonts-content(BAUHS93, 9rem, none, none);
-      }
-    }
-
-    &--parrafo {
-      color: $colorBlanco;
-      font-size: 1.5rem;
-      text-align: justify;
-      line-height: 40px;
-    }
-  }
-}
-
-@-webkit-keyframes slide-left {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-  85% {
-    -webkit-transform: translateX(-100px);
-    transform: translateX(-100px);
-  }
-}
-@keyframes slide-left {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-  85% {
-    -webkit-transform: translateX(-100px);
-    transform: translateX(-100px);
-  }
-}
-
-/*---------------------   SECTION TOPPINGS ---------------------- */
-.toopings {
-  @include background-image-content("../assets/img/fondos/fondoToppings.png");
-  padding: 50px 0px;
-
-  &__title {
-    text-align: center;
-    color: $colorBurguer;
-    font-weight: 900;
-    font-size: 6rem;
-  }
-
-  &__parrafo {
-    text-align: center;
-    font-size: 1.5rem;
-  }
-
-  &__list {
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20%;
-    grid-template-rows: 250px 250px;
-    justify-content: center;
-    padding-top: 20px;
-    cursor: pointer;
-
-    &--item {
-      &__img {
-        width: 60%;
-        display: flex;
-        margin: 0px auto;
-      }
-
-      &__nombreTopping {
-        text-align: center;
       }
     }
   }
@@ -550,6 +469,7 @@
 @media only screen and (max-width: 1024px) {
   /***** INDEX PAGE *****/
 
+  // home
   .headerHome {
     height: 93vh;
 
@@ -557,6 +477,12 @@
       padding: 200px 0px;
     }
   }
+
+  // about
+
+  // toppings
+
+  // opiniones
 
   /****** CARTA PAGE ******/
 

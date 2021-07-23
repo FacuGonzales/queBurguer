@@ -353,31 +353,69 @@ li.subMenuItem a:hover {
     width: 90%;
     margin: 0px auto;
     padding: 50px 0px;
-    display: block;
-    -webkit-animation: slide-top 0.5s ease-in-out alternate forwards;
-    animation: slide-top 0.5s ease-in-out alternate forwards; }
+    display: block; }
 
-@-webkit-keyframes slide-top {
-  0% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0); }
-  85% {
-    -webkit-transform: translateY(-100px);
-    transform: translateY(-100px); } }
+/*---------------------   SECTION ABOUT ---------------------- */
+.about {
+  background-image: url("../assets/img/fondos/fondoAbout.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+  .about__sectionNosotros {
+    width: 80%;
+    margin: 0px auto;
+    padding: 35px 0px; }
+    .about__sectionNosotros--title {
+      color: #fa9b03;
+      text-align: center;
+      text-transform: uppercase;
+      display: grid; }
+      .about__sectionNosotros--title__titleUno {
+        font-family: AlwaysForever;
+        font-size: 12rem;
+        font-weight: none;
+        font-style: none; }
+      .about__sectionNosotros--title__titleDos {
+        font-family: BAUHS93;
+        font-size: 9rem;
+        font-weight: none;
+        font-style: none; }
+    .about__sectionNosotros--parrafo {
+      color: #fff;
+      font-size: 1.5rem;
+      text-align: justify;
+      line-height: 40px; }
 
-@keyframes slide-top {
-  0% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0); }
-  85% {
-    -webkit-transform: translateY(-100px);
-    transform: translateY(-100px); } }
+/*---------------------   SECTION TOPPINGS ---------------------- */
+.toopings {
+  background-image: url("../assets/img/fondos/fondoToppings.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 50px 0px; }
+  .toopings__title {
+    text-align: center;
+    color: #fa9b03;
+    font-weight: 900;
+    font-size: 6rem; }
+  .toopings__parrafo {
+    text-align: center;
+    font-size: 1.5rem; }
+  .toopings__list {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: 250px 250px;
+    justify-content: center;
+    padding-top: 20px;
+    cursor: pointer; }
+    .toopings__list--item__img {
+      width: 60%;
+      display: flex;
+      margin: 0px auto; }
+    .toopings__list--item__nombreTopping {
+      text-align: center; }
 
-/*--------------------- OPINIONES ---------------------- */
-.sliderRigth {
-  -webkit-animation: slide-right 0.5s ease-in-out both;
-  animation: slide-right 0.5s ease-in-out both; }
-
+/*--------------------- SECTION OPINIONES ---------------------- */
 .carousel {
   width: 95%;
   margin: 0px auto;
@@ -414,103 +452,6 @@ li.subMenuItem a:hover {
         color: #000;
         font-size: 1rem;
         margin: 0px 15px; }
-
-@-webkit-keyframes slide-right {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0); }
-  85% {
-    -webkit-transform: translateX(100px);
-    transform: translateX(100px); } }
-
-@keyframes slide-right {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0); }
-  85% {
-    -webkit-transform: translateX(100px);
-    transform: translateX(100px); } }
-
-/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-/*                                                                                        ABOUT PAGE                                                                                                        */
-/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-.about {
-  background-image: url("../assets/img/fondos/fondoAbout.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed; }
-  .about--sliderLeft {
-    -webkit-animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-    animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
-  .about__sectionNosotros {
-    width: 80%;
-    margin: 0px auto;
-    padding: 35px 0px; }
-    .about__sectionNosotros--title {
-      color: #fa9b03;
-      text-align: center;
-      text-transform: uppercase;
-      display: grid; }
-      .about__sectionNosotros--title__titleUno {
-        font-family: AlwaysForever;
-        font-size: 12rem;
-        font-weight: none;
-        font-style: none; }
-      .about__sectionNosotros--title__titleDos {
-        font-family: BAUHS93;
-        font-size: 9rem;
-        font-weight: none;
-        font-style: none; }
-    .about__sectionNosotros--parrafo {
-      color: #fff;
-      font-size: 1.5rem;
-      text-align: justify;
-      line-height: 40px; }
-
-@-webkit-keyframes slide-left {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0); }
-  85% {
-    -webkit-transform: translateX(-100px);
-    transform: translateX(-100px); } }
-
-@keyframes slide-left {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0); }
-  85% {
-    -webkit-transform: translateX(-100px);
-    transform: translateX(-100px); } }
-
-/*---------------------   SECTION TOPPINGS ---------------------- */
-.toopings {
-  background-image: url("../assets/img/fondos/fondoToppings.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  padding: 50px 0px; }
-  .toopings__title {
-    text-align: center;
-    color: #fa9b03;
-    font-weight: 900;
-    font-size: 6rem; }
-  .toopings__parrafo {
-    text-align: center;
-    font-size: 1.5rem; }
-  .toopings__list {
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20%;
-    grid-template-rows: 250px 250px;
-    justify-content: center;
-    padding-top: 20px;
-    cursor: pointer; }
-    .toopings__list--item__img {
-      width: 60%;
-      display: flex;
-      margin: 0px auto; }
-    .toopings__list--item__nombreTopping {
-      text-align: center; }
 
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*                                                                                        CARTA PAGE                                                                                                        */

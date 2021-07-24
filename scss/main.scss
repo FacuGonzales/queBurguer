@@ -151,6 +151,49 @@
   }
 }
 
+/*--------------------- SECTION VER LOCALES ---------------------- */
+
+.verLocales {
+  @include background-image-content("../assets/img/fondos/fondoAbout.png");
+  @include display-flex-content(flex, center, center, "");
+  height: 50vh;
+
+  &--imgContainer {
+    width: 50%;
+    @include display-flex-content(flex, center, center, "");
+
+    &__img {
+      width: 50%;
+    }
+  }
+
+  &--mensajeContainer {
+    text-align: left;
+
+    &__parrafo {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+    }
+
+    &__a {
+      font-family: AlwaysForeverBold;
+      text-align: center;
+      font-size: 3rem;
+      border: 5px solid $colorBurguer;
+      padding: 10px 70px;
+      border-radius: 50px;
+      color: $colorNegro;
+
+      &:hover {
+        background-color: $colorBurguer;
+        color: #fff;
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 /*                                                                                        CARTA PAGE                                                                                                        */
@@ -471,18 +514,36 @@
 
   // home
   .headerHome {
-    height: 93vh;
+    height: 100vh;
 
     &__img {
-      padding: 200px 0px;
+      padding: 225px 0px;
     }
   }
 
   // about
+  .about {
+    & h2 {
+      padding-top: 30px;
+    }
+
+    &__sectionNosotros {
+      padding: 10px 0px;
+    }
+  }
 
   // toppings
+  .toopings {
+    &__parrafo {
+      font-size: 1.2rem;
+    }
+  }
 
-  // opiniones
+  // ver locales
+
+  .verLocales {
+    height: 30vh;
+  }
 
   /****** CARTA PAGE ******/
 
@@ -492,6 +553,17 @@
 }
 
 @media only screen and (max-width: 768px) {
+  /***** INDEX PAGE *****/
+
+  // home
+  .headerHome {
+    height: 100vh;
+
+    &__img {
+      padding: 265px 0px;
+    }
+  }
+
   /****** ABOUT PAGE ******/
 
   .section {

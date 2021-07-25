@@ -12,6 +12,12 @@
   flex-direction: $_flexDirection;
 }
 
+@mixin display-grid-content($_columns, $_rows) {
+  display: grid;
+  grid-template-columns: $_columns;
+  grid-template-rows: $_rows;
+}
+
 @mixin fonts-content($_family, $_size, $_weight, $_style) {
   font-family: $_family;
   font-size: $_size;

@@ -21,6 +21,10 @@ nav div.container-fluid div.navbar-collapse {
   justify-content: center;
 }
 
+.navbar-dark .navbar-nav .nav-link {
+  color: $colorBlanco !important;
+}
+
 .ulNav {
   a {
     position: relative;

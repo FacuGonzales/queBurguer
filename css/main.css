@@ -422,14 +422,18 @@ li.subMenuItem a:hover {
   margin: 0px auto;
   overflow: hidden; }
   .carousel__opinionesList {
-    display: flex !important;
-    justify-content: center; }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: ""; }
     .carousel__opinionesList__opinionItem {
       width: 300px;
       height: 250px;
       border-radius: 10px;
+      display: "";
       align-items: center;
       justify-content: center;
+      flex-direction: "";
       transition: 0.3s;
       margin: 0px 20px 70px 20px;
       border: 1px solid #fa9b03;
@@ -441,7 +445,9 @@ li.subMenuItem a:hover {
         margin: 10px 0px; }
       .carousel__opinionesList__opinionItem--puntajeOpinion {
         display: flex;
+        align-items: center;
         justify-content: center;
+        flex-direction: "";
         color: #f5ff37;
         margin: 20px auto;
         font-size: 2rem; }
@@ -765,7 +771,13 @@ li.subMenuItem a:hover {
     height: 30vh; }
   /****** CARTA PAGE ******/
   .content {
-    padding: 85px 0px 90px 0px; } }
+    padding: 85px 0px 90px 0px; }
+  /******* LOCALES PAGE *******/
+  .section__zonasList__zonasItems--localesList__localesItem {
+    padding: 0px 0px;
+    margin: 0px 5px 70px 5px; }
+    .section__zonasList__zonasItems--localesList__localesItem__direccionItem {
+      font-size: 1rem; } }
 
 @media only screen and (max-width: 768px) {
   /***** INDEX PAGE *****/
@@ -816,14 +828,16 @@ li.subMenuItem a:hover {
   .grid {
     grid-template-columns: 40% 40%; }
   /****** LOCALES PAGE ******/
-  .section__zonasList__zonasItems--nameZona {
-    font-size: 4.5rem; }
-  .section__zonasList__zonasItems--localesList__localesItem {
-    padding: 0px 0px !important;
-    margin: 0px 5px 70px 5px; }
-    .section__zonasList__zonasItems--localesList__localesItem__direccionItem {
-      font-size: 0.8rem;
-      padding: 0px 0px; }
+  .section__zonasList {
+    width: 95%; }
+    .section__zonasList__zonasItems--nameZona {
+      font-size: 3.5rem; }
+    .section__zonasList__zonasItems--localesList__localesItem {
+      padding: 0px 0px !important;
+      margin: 0px 5px 70px 5px; }
+      .section__zonasList__zonasItems--localesList__localesItem__direccionItem {
+        font-size: 0.8rem;
+        padding: 0px 0px; }
   /****** CONTACTO PAGE ******/
   .contactoSection__formulario {
     margin: 40px auto !important; }

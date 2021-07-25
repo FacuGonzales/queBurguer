@@ -80,9 +80,7 @@
   }
 
   &__list {
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20%;
-    grid-template-rows: 250px 250px;
+    @include display-grid-content(20% 20% 20% 20%, 250px 250px);
     justify-content: center;
     padding-top: 20px;
     cursor: pointer;
@@ -108,15 +106,13 @@
   overflow: hidden;
 
   &__opinionesList {
-    display: flex !important;
-    justify-content: center;
+    @include display-flex-content(flex, center, center, "");
 
     &__opinionItem {
       width: 300px;
       height: 250px;
       border-radius: 10px;
-      align-items: center;
-      justify-content: center;
+      @include display-flex-content("", center, center, "");
       transition: 0.3s;
       margin: 0px 20px 70px 20px;
       border: 1px solid $colorBurguer;
@@ -130,8 +126,7 @@
       }
 
       &--puntajeOpinion {
-        display: flex;
-        justify-content: center;
+        @include display-flex-content(flex, center, center, "");
         color: $colorEstrella;
         margin: 20px auto;
         font-size: 2rem;
@@ -254,6 +249,7 @@
 }
 
 .grid {
+  // @include display-grid-content(30% 30% 30%, 200px 200px);
   display: grid;
   grid-template-columns: 30% 30% 30%;
   grid-template-rows: 200px 200px;
@@ -551,6 +547,24 @@
   .content {
     padding: 85px 0px 90px 0px;
   }
+
+  /******* LOCALES PAGE *******/
+  .section {
+    &__zonasList {
+      &__zonasItems {
+        &--localesList {
+          &__localesItem {
+            padding: 0px 0px;
+            margin: 0px 5px 70px 5px;
+
+            &__direccionItem {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -668,9 +682,11 @@
 
   .section {
     &__zonasList {
+      width: 95%;
+
       &__zonasItems {
         &--nameZona {
-          font-size: 4.5rem;
+          font-size: 3.5rem;
         }
 
         &--localesList {

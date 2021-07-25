@@ -212,23 +212,13 @@
   @include background-image-content("../assets/img/fondos/pizza-Fondos.svg");
 }
 
-.carta {
-  @include display-flex-content(flex, center, center, "");
-  color: $colorBlanco;
-}
-
 .content {
   max-width: 49rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
   margin: auto;
-  text-align: center;
-  padding: 150px 0px 152px 0px;
+  height: 87vh;
 }
 
 .contentHeader {
-  z-index: 2;
-  margin: 0px auto;
   width: 100%;
 }
 
@@ -241,12 +231,8 @@
 }
 
 .grid {
-  // @include display-grid-content(30% 30% 30%, 200px 200px);
-  display: grid;
-  grid-template-columns: 30% 30% 30%;
-  grid-template-rows: 200px 200px;
-  justify-content: space-around;
-  align-items: baseline;
+  @include display-grid-content(30% 30% 30%, 195px 195px);
+  @include display-flex-content(grid, baseline, space-around, "");
 }
 
 .item {
@@ -538,6 +524,7 @@
 
   .content {
     padding: 85px 0px 90px 0px;
+    height: 94vh;
   }
 
   /******* LOCALES PAGE *******/
@@ -829,6 +816,11 @@
   }
 
   /****** CARTA PAGE ******/
+
+  .content {
+    padding: 85px 0px 90px 0px;
+    height: 100%;
+  }
 
   .grid {
     grid-template-columns: 80%;

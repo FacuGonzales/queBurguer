@@ -100,7 +100,7 @@ a {
 
 @media only screen and (max-width: 480px) {
   .section--subtitle {
-    font-size: 4rem;
+    font-size: 3rem;
     width: 60%; }
   .footer {
     font-size: 0.8rem; }
@@ -383,6 +383,7 @@ li.subMenuItem a:hover {
     .about__sectionNosotros--parrafo {
       color: #fff;
       font-size: 1.5rem;
+      font-family: Arial, Helvetica, sans-serif;
       text-align: justify;
       line-height: 40px; }
 
@@ -772,13 +773,40 @@ li.subMenuItem a:hover {
     height: 100vh; }
     .headerHome__img {
       padding: 265px 0px; }
-  /****** ABOUT PAGE ******/
-  .section__sectionNosotros--title__titleUno {
+  .about__sectionNosotros--title__titleUno {
     font-size: 8rem; }
-  .section__sectionNosotros--title__titleDos {
+  .about__sectionNosotros--title__titleDos {
     font-size: 5rem; }
-  .section__sectionNosotros--parrafo {
-    line-height: 35px; }
+  .about__sectionNosotros--parrafo {
+    line-height: 35px;
+    font-size: 1.2rem; }
+  .opinionesSection--h2 {
+    padding-top: 0px; }
+  .carousel__opinionesList__opinionItem {
+    height: 300px;
+    margin: 0px 10px 35px 10px; }
+    .carousel__opinionesList__opinionItem--name {
+      font-size: 2rem; }
+    .carousel__opinionesList__opinionItem--puntajeOpinion {
+      font-size: 1.5rem; }
+    .carousel__opinionesList__opinionItem--comentario {
+      font-size: 0.8rem;
+      font-family: arial; }
+  .toopings__parrafo {
+    font-size: 1rem; }
+  .toopings__list {
+    grid-template-columns: 30% 30% 30%; }
+  .verLocales--imgContainer {
+    width: 100%; }
+    .verLocales--imgContainer__img {
+      width: 60%; }
+  .verLocales--mensajeContainer {
+    text-align: left; }
+    .verLocales--mensajeContainer__parrafo {
+      font-size: 0.8rem; }
+    .verLocales--mensajeContainer__a {
+      font-size: 2rem;
+      padding: 10px 50px; }
   /****** CARTA PAGE ******/
   .content {
     padding: 40px 0px 0px 0px; }
@@ -822,14 +850,29 @@ li.subMenuItem a:hover {
     .carousel__opinionesList__opinionItem--comentario {
       font-size: 0.6rem;
       margin: 0px 5px; }
-  /****** ABOUT PAGE ******/
-  .section__sectionNosotros--title__titleUno {
-    font-size: 5rem; }
-  .section__sectionNosotros--title__titleDos {
-    font-size: 3rem; }
-  .section__sectionNosotros--parrafo {
-    font-size: 1.2rem;
+  .about__sectionNosotros--title__titleUno {
+    font-size: 6rem; }
+  .about__sectionNosotros--title__titleDos {
+    font-size: 4rem; }
+  .about__sectionNosotros--parrafo {
+    font-size: 0.7rem;
     line-height: 25px; }
+  .toopings {
+    padding: 10px 0px; }
+    .toopings__list {
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 140px 140px; }
+      .toopings__list--item__img {
+        width: 40%; }
+  .carousel__opinionesList__opinionItem {
+    height: 210px; }
+  .verLocales--imgContainer__img {
+    width: 65%; }
+  .verLocales--mensajeContainer__parrafo {
+    font-size: 0.5rem; }
+  .verLocales--mensajeContainer__a {
+    font-size: 1rem;
+    padding: 10px 30px; }
   /****** CARTA PAGE ******/
   .grid {
     grid-template-columns: 80%; }

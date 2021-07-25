@@ -125,6 +125,9 @@ header {
 nav div.container-fluid div.navbar-collapse {
   justify-content: center; }
 
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff !important; }
+
 .ulNav a {
   position: relative;
   display: block;
@@ -525,24 +528,12 @@ li.subMenuItem a:hover {
   background-size: cover;
   background-attachment: fixed; }
 
-.carta {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: "";
-  color: #fff; }
-
 .content {
   max-width: 49rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
   margin: auto;
-  text-align: center;
-  padding: 150px 0px 152px 0px; }
+  height: 87vh; }
 
 .contentHeader {
-  z-index: 2;
-  margin: 0px auto;
   width: 100%; }
 
 .titleCarta {
@@ -558,9 +549,11 @@ li.subMenuItem a:hover {
 .grid {
   display: grid;
   grid-template-columns: 30% 30% 30%;
-  grid-template-rows: 200px 200px;
+  grid-template-rows: 195px 195px;
+  display: grid;
+  align-items: baseline;
   justify-content: space-around;
-  align-items: baseline; }
+  flex-direction: ""; }
 
 .item {
   display: flex;
@@ -771,7 +764,8 @@ li.subMenuItem a:hover {
     height: 30vh; }
   /****** CARTA PAGE ******/
   .content {
-    padding: 85px 0px 90px 0px; }
+    padding: 85px 0px 90px 0px;
+    height: 94vh; }
   /******* LOCALES PAGE *******/
   .section__zonasList__zonasItems--localesList__localesItem {
     padding: 0px 0px;
@@ -891,6 +885,9 @@ li.subMenuItem a:hover {
     font-size: 1rem;
     padding: 10px 30px; }
   /****** CARTA PAGE ******/
+  .content {
+    padding: 85px 0px 90px 0px;
+    height: 100%; }
   .grid {
     grid-template-columns: 80%; }
   /****** LOCALES PAGE ******/

@@ -20,7 +20,7 @@ a {
 }
 
 .section {
-  @include background-image-content("https://i.ibb.co/j8BTF9Q/fondoBar.png");
+  @include background-image-content("../assets/img/fondos/fondoBar.svg");
   height: 100%;
 
   &--subtitle {

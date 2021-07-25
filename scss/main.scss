@@ -55,6 +55,7 @@
     &--parrafo {
       color: $colorBlanco;
       font-size: 1.5rem;
+      font-family: Arial, Helvetica, sans-serif;
       text-align: justify;
       line-height: 40px;
     }
@@ -564,9 +565,8 @@
     }
   }
 
-  /****** ABOUT PAGE ******/
-
-  .section {
+  // about
+  .about {
     &__sectionNosotros {
       &--title {
         &__titleUno {
@@ -580,6 +580,71 @@
 
       &--parrafo {
         line-height: 35px;
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  // Opiniones
+  .opinionesSection {
+    &--h2 {
+      padding-top: 0px;
+    }
+  }
+  .carousel {
+    &__opinionesList {
+      &__opinionItem {
+        height: 300px;
+        margin: 0px 10px 35px 10px;
+
+        &--name {
+          font-size: 2rem;
+        }
+
+        &--puntajeOpinion {
+          font-size: 1.5rem;
+        }
+
+        &--comentario {
+          font-size: 0.8rem;
+          font-family: arial;
+        }
+      }
+    }
+  }
+
+  // Toppings
+  .toopings {
+    &__parrafo {
+      font-size: 1rem;
+    }
+
+    &__list {
+      grid-template-columns: 30% 30% 30%;
+    }
+  }
+
+  // Ver Locales
+
+  .verLocales {
+    &--imgContainer {
+      width: 100%;
+
+      &__img {
+        width: 60%;
+      }
+    }
+
+    &--mensajeContainer {
+      text-align: left;
+
+      &__parrafo {
+        font-size: 0.8rem;
+      }
+
+      &__a {
+        font-size: 2rem;
+        padding: 10px 50px;
       }
     }
   }
@@ -650,6 +715,7 @@
 @media only screen and (max-width: 480px) {
   /***** INDEX PAGE *****/
 
+  // header
   .headerHome {
     &__img {
       width: 100%;
@@ -680,23 +746,69 @@
     }
   }
 
-  /****** ABOUT PAGE ******/
-
-  .section {
+  // About
+  .about {
     &__sectionNosotros {
       &--title {
         &__titleUno {
-          font-size: 5rem;
+          font-size: 6rem;
         }
 
         &__titleDos {
-          font-size: 3rem;
+          font-size: 4rem;
         }
       }
 
       &--parrafo {
-        font-size: 1.2rem;
+        font-size: 0.7rem;
         line-height: 25px;
+      }
+    }
+  }
+
+  // Toppings
+  .toopings {
+    padding: 10px 0px;
+
+    &__list {
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 140px 140px;
+
+      &--item {
+        &__img {
+          width: 40%;
+        }
+      }
+    }
+  }
+
+  // Opiniones
+
+  .carousel {
+    &__opinionesList {
+      &__opinionItem {
+        height: 210px;
+      }
+    }
+  }
+
+  // Ver Locales
+
+  .verLocales {
+    &--imgContainer {
+      &__img {
+        width: 65%;
+      }
+    }
+
+    &--mensajeContainer {
+      &__parrafo {
+        font-size: 0.5rem;
+      }
+
+      &__a {
+        font-size: 1rem;
+        padding: 10px 30px;
       }
     }
   }

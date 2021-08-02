@@ -683,11 +683,12 @@ li.subMenuItem a:hover {
   .contactoSection__formulario {
     width: 60%;
     margin: 0px auto;
+    margin-top: 35px;
     color: #fff;
     font-family: BAUHS93;
     text-transform: uppercase;
     text-align: center;
-    padding: 5px;
+    padding: 15px;
     border-radius: 10px;
     background-color: #fa9b0351; }
     .contactoSection__formulario--label {
@@ -765,7 +766,7 @@ li.subMenuItem a:hover {
   /****** CARTA PAGE ******/
   .content {
     padding: 85px 0px 90px 0px;
-    height: 94vh; }
+    height: 100vh; }
   /******* LOCALES PAGE *******/
   .section__zonasList__zonasItems--localesList__localesItem {
     padding: 0px 0px;
@@ -893,9 +894,13 @@ li.subMenuItem a:hover {
   /****** LOCALES PAGE ******/
   .section__zonasList__zonasItems--nameZona {
     font-size: 3em; }
-  .section__zonasList__zonasItems--localesList__localesItem {
-    padding: 0px 0px !important;
-    margin: 0px 5px 70px 5px; }
-    .section__zonasList__zonasItems--localesList__localesItem__direccionItem {
-      font-size: 0.5rem;
-      padding: 0px 0px; } }
+  .section__zonasList__zonasItems--localesList {
+    display: block; }
+    .section__zonasList__zonasItems--localesList__localesItem {
+      padding: 0px 0px !important;
+      margin: 0px 20px 20px 20px; }
+      .section__zonasList__zonasItems--localesList__localesItem__direccionItem {
+        font-size: 1rem;
+        padding: 0px 0px; }
+        .section__zonasList__zonasItems--localesList__localesItem__direccionItem--datos {
+          padding: 0px 0px; } }

@@ -395,11 +395,12 @@
   &__formulario {
     width: 60%;
     margin: 0px auto;
+    margin-top: 35px;
     color: $colorBlanco;
     font-family: BAUHS93;
     text-transform: uppercase;
     text-align: center;
-    padding: 5px;
+    padding: 15px;
     border-radius: 10px;
     background-color: $colorBurguerDegradado;
 
@@ -524,7 +525,7 @@
 
   .content {
     padding: 85px 0px 90px 0px;
-    height: 94vh;
+    height: 100vh; //95vh;
   }
 
   /******* LOCALES PAGE *******/
@@ -836,13 +837,18 @@
         }
 
         &--localesList {
+          display: block;
           &__localesItem {
             padding: 0px 0px !important;
-            margin: 0px 5px 70px 5px;
+            margin: 0px 20px 20px 20px;
 
             &__direccionItem {
-              font-size: 0.5rem;
+              font-size: 1rem;
               padding: 0px 0px;
+
+              &--datos {
+                padding: 0px 0px;
+              }
             }
           }
         }
